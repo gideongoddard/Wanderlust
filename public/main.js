@@ -12,7 +12,7 @@ const $input = $('#city');
 const $submit = $('#button');
 const $destination = $('#destination');
 const $container = $('.container');
-const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
+const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4"), $("#venue5")];
 const $weatherDiv = $("#weather1");
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -25,6 +25,7 @@ const getVenues = async () => {
     if (response.ok) {
       const jsonResponse = await response.json();
       const venues = jsonResponse.response.groups[0].items.map(item => item.venue);
+      console.log(venues);
       return venues;
     }
   } catch(error) {
