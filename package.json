@@ -10,7 +10,7 @@
   "author": "GG",
   "license": "ISC",
   "dependencies": {
-    "braces": "^2.3.1",
+    "braces": "^3.0.3",
     "npm": "^9.2.0"
   },
   "devDependencies": {
